@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 import os
 import json
 import threading
@@ -8,10 +8,10 @@ import sys
 import logging
 from main3 import main as run_scraper_direct  # Import directly
 
-from flask import Flask, send_from_directory  # Add this import
-import os
+from flask_cors import CORS
 
 app = Flask(__name__, static_folder='../vibe-navigator-frontend/build')
+CORS(app)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

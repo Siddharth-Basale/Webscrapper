@@ -4,24 +4,22 @@ import SearchForm from '../components/SearchForm';
 import ResultsList from '../components/ResultsList';
 import axios from 'axios';
 
-
-
 export default function Home() {
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const handleSearch = async ({ city, category }) => {
+  const handleSearch = async ({ city, category, query, tags }) => {
     setLoading(true);
     try {
-      // First collect data
+      // First: collect data
       await axios.post('http://localhost:5000/api/search', { city, category });
-      
-      // Then query for recommendations
+
+      // Then: query using user-defined query + selected tags
       const { data } = await axios.post('http://localhost:5000/api/query', {
-        query: `Best ${category} in ${city}`,
-        tags: []
+        query,
+        tags
       });
-      
+
       setResults([data]);
     } catch (error) {
       console.error(error);
@@ -38,9 +36,9 @@ export default function Home() {
       <Typography variant="subtitle1" gutterBottom>
         Discover places based on user reviews
       </Typography>
-      
+
       <SearchForm onSearch={handleSearch} />
-      
+
       {loading ? (
         <Typography>Loading recommendations...</Typography>
       ) : (
