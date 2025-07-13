@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Cafe Goodluck",
+    "address": "Fergusson College Rd, near Goodluck Chowk, Deccan Gymkhana, Pune, Maharashtra 411004, India",
+    "rating": 4.2,
+    "reviews_count": 50727,
+    "coordinates": {
+      "latitude": 18.5173131,
+      "longitude": 73.8414923
+    },
+    "category": "cafe",
+    "city": "pune",
+    "source_url": "ChIJ4czX-oe_wjsRF5s3E6HDKng"
+  },
+  {
+    "name": "Vohuman Cafe",
+    "address": "Millenium Star, Chatrapati Shahu Maharaj Rd, near Ruby Hall, Sangamvadi, Pune, Maharashtra 411001, India",
+    "rating": 4.3,
+    "reviews_count": 14640,
+    "coordinates": {
+      "latitude": 18.532597199999998,
+      "longitude": 73.8768405
+    },
+    "category": "cafe",
+    "city": "pune",
+    "source_url": "ChIJHQkrD1jAwjsReTIzCjxLghc"
+  },
+  {
+    "name": "Cafe - The Voyage",
+    "address": "A-2, Cafe - The Voyage, Ground Floor Ashiyana Park, Koregaon Park, North main road, lane, 5, Pune, Maharashtra 411001, India",
+    "rating": 4.8,
+    "reviews_count": 1006,
+    "coordinates": {
+      "latitude": 18.539485499999998,
+      "longitude": 73.8976045
+    },
+    "category": "cafe",
+    "city": "pune",
+    "source_url": "ChIJqUxTFuXBwjsRBE5MLhGy0W0"
+  }
+]
